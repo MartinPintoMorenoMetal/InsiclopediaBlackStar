@@ -1,0 +1,97 @@
+*    {   
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+   
+    width: 100%;
+    height: 100%;
+}
+
+
+.titulo{
+    color: #2C3E50;
+    font-size: 20px;
+    text-align: center;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bajadaTitulo{
+    color: #2C3E50;
+    font-size: 12;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+body,html{
+    background-color: #F9E79F;
+}
+.container{
+    position: relative;
+    top: 20px;
+    width: 90%;
+    height: auto;
+    background-color: none;
+    margin: auto;
+
+}
+.container .list-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container .list-image li{
+    margin-right: 15px;
+    margin-bottom: 15px;
+    list-style: none;
+}
+.container .list-image li .container__image {
+    position: relative;
+    width: 250px;
+    height: 190px;
+    background-color: #FDFEFE;
+    border-radius: 3px;
+
+    
+}
+.container .list-image li .container__image img{
+position:  relative;
+width: 250px;
+height: 150px;
+border-top-right-radius: 3px;
+border-top-left-radius: 3px;
+}
+
+.container .list-image li .container__image .information__image { 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: none;
+    display: flex;
+    align-items: center; 
+}
+.container .list-image li .container__image .information__image .name__image{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-left: 5px;
+} 
+
+.container .list-image li .container__image .information__image .view__moreinfo{
+position: absolute;
+right: 10px;
+display: block;
+text-decoration: none;
+color: #1C2833;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 14px;
+top: 5px;
+padding: 6px 12px;
+height: 15px;
+line-height: 12px;
+width: auto;
+border-radius: 90px;
+border: 2px solid #888;
+}

@@ -1,0 +1,68 @@
+/* h1 o h2 body y asi*/
+body {
+    color: #ffffff;
+    background: #161515;
+}
+
+
+#TituloMayor {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    font-weight: 2px;
+    color: #ffffff;
+
+}
+
+#centrar {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+/*bold negrita*/
+#parrafoMayoritario {
+    text-align: justify;
+    text-align: normal;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+#Titulado {
+    text-align: justify;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100;
+    color: #ffffff;
+
+}
+
+#imagenCentrada {
+    display: block;
+    margin: auto;
+}
+
+.ghost-button {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+  }
+
