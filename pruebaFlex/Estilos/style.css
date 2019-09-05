@@ -63,21 +63,12 @@ p {
     color: #ffffff;
 }
 
-#imagenCentrada {
+.imagenCentrada {
     display: block;
     margin: auto;
 }
 
-.ghost-button {
-    display: inline-block;
-    width: 200px;
-    padding: 8px;
-    color: #fff;
-    border: 1px solid #fff;
-    text-align: center;
-    outline: none;
-    text-decoration: none;
-}
+
 
 body {
     width: 100%;

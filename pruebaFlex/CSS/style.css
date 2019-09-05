@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+p{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+
+
+
 .redondo{
     border-radius: 25px;
 }
@@ -17,23 +26,36 @@ body {
 .letraGamer {
     font-family: 'Press Start 2P', cursive;
     font-size: 1rem;
+    color: #ffffff;
+}
+
+.Centrar{
+    background-attachment: fixed;
 }
 
 .cuerpo {
+    font-family: 'Press Start 2P', cursive;
     font-size: 1.8rem;
     color: #ffffff;
-    text-align: center;
+}
+
+.SubtitulosPreguntas{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: left;
 }
 
 .Subtitulos {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Press Start 2P', cursive;
     font-size: 28px;
     color: #ffffff;
     text-align: center;
 }
 
 .NombreCriatura {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    font-family: 'Press Start 2P', cursive;
     font-size: 32px;
     color: #ff0000;
     text-align: center;
