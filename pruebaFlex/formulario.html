@@ -19,13 +19,13 @@
         <form action="contacto" name="contacto" method="post" class="form-registro">
             <h1>Formulario de registro</h1>
             <div class="contenedor-inputs">
-                <input id="nombre" type="text" name="nombre" placeholder="Nombre (requerido)" class="input-48" onblur="validarNombre()">
-                <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos (requerido)" class="input-48" onblur="validarApellido()">
-                <input id="email" type="text" name="email" placeholder="Email (requerido)" class="input-100" onblur="validarCorreo()">
-                <input id="usuario" type="text" name="usuario" placeholder="Usuario (requerido)" class="input-48" onblur="validarUsuario()">
-                <input type="password" name="clave" placeholder="Clave (requerido)" class="input-48">
-                <input id="fecha" name="fecha" type="date" min="2019-09-05" class="input-100">
-                <input id="telefono" type="number" name="telefono" placeholder="Teléfono " class="input-100">
+                <input id="nombre" type="text" name="nombre" placeholder="Nombre (requerido)" class="input-48" onblur="validarNombre()" required>
+                <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos (requerido)" class="input-48" onblur="validarApellido()" required>
+                <input id="email" type="text" name="email" placeholder="Email (requerido)" class="input-100" onblur="validarCorreo()" required>
+                <input id="usuario" type="text" name="usuario" placeholder="Usuario (requerido)" class="input-48" onblur="validarUsuario()" required>
+                <input type="password" name="clave" placeholder="Clave (requerido)" class="input-48" required>
+                <input id="fecha" name="fecha" type="date" min="2019-09-05" class="input-100" required>
+                <input id="telefono" type="number" name="telefono" placeholder="Teléfono " class="input-100" required>
                 <br>
                 <input type="submit" value="Registrar" class="btn-enviar" onclick="validarFormulario()">
                 <p class="form-link">¿ya tienes una cuenta?<a href="#">Ingrese aquí</a></p>

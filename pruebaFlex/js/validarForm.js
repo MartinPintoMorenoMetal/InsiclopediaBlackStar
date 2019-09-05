@@ -215,8 +215,8 @@ $(function() {
 });
 
 function validarFormulario() {
-    validarNombre();
-    validarApellido();
-    validarCorreo();
-    validarUsuario();
+    validarNombre()
+    validarApellido()
+    validarCorreo()
+    validarUsuario()
 };
