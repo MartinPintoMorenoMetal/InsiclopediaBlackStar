@@ -5,25 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
     <link rel="stylesheet" href="Estilos/estiloFormulario.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Formulario de Registro</title>
 </head>
 
 <body>
-    <h1>Formulario de registro</h1>
-    <form action="registrar.php" method="post" class="form-registro">
-        <h2 class="form-titulo">CREA UNA CUENTA</h2>
-        <div class="contenedor-inputs">
-            <input type="text" name="nombre" placeholder="Nombre" class="input-48" required>
-            <input type="text" name="apellidos" placeholder="Apellidos" class="input-48" required>
-            <input type="text" name="email" placeholder="Correo" class="input-100" required>
-            <input type="text" name="usuario" placeholder="Usuario" class="input-48" required>
-            <input type="password" name="clave" placeholder="Contraseña" class="input-48" required>
-            <input type="number" name="telefono" placeholder="Teléfono" class="input-100" required>
-            <input type="submit" value="Registrar" class="btn-enviar" required>
-            <p class="form-link">¿ya tienes una cuenta?<a href="#">Ingrese aquí</a></p>
-            <p class="form-link">para regresar pincha en "Principal" <a href="index.html">Principal</a></p>
-    </form>
+    <div class="contenedor-fluido">
+
+        <form action="contacto" method="post" class="form-registro">
+            <h1>Formulario de registro</h1>
+            <div class="contenedor-inputs">
+                <input id="nombre" type="text" name="nombre" placeholder="Nombre" class="input-48" onblur="validarNombre()" required>
+                <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos" class="input-48" required onblur="validarApellido()">
+                <input id="email" type="text" name="email" placeholder="Email" class="input-100" required onblur="validarCorreo()">
+                <input id="usuario" type="text" name="usuario" placeholder="Usuario" class="input-48" required onblur="validarUsuario()" required>
+                <input type="password" name="clave" placeholder="Clave" class="input-48" required>
+                <input id="fecha" name="fecha" type="date" min="2019-09-05" class="input-100">
+                <input id="telefono" type="number" name="telefono" placeholder="Teléfono" class="input-100" required required>
+                <br>
+                <input type="submit" value="Registrar" class="btn-enviar" onclick="validarFormulario()">
+                <p class="form-link">¿ya tienes una cuenta?<a href="#">Ingrese aquí</a></p>
+                <p class="form-link">para regresar pincha en "Principal" <a href="index.html">Principal</a></p> <br>
+        </form>
+
+        <br>
+        <footer class="row">
+            <hr>
+            <span class=" col-xs-12  cursiva centrar">Contactanos al +56946210495</span>
+        </footer>
+        </div>
+        <script src="js/validarForm.js"></script>
 </body>
 
 </html>
