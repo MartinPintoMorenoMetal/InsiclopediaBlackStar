@@ -1,6 +1,4 @@
-*{
-
-
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,7 +25,6 @@ body {
 
 header {
     background: rgb(31, 31, 31);
-
 }
 
 header .logo {
@@ -56,7 +53,6 @@ header nav {
     ;
     font-weight: black;
 }
-
 
 header nav a {
     background: #e74c3c;
@@ -189,11 +185,11 @@ footer .social a {
 }
 
 .content-all {
-    width: 210px;
+    width: 145px;
     margin: auto;
-    perspective: 800px;
+    perspective: 1000px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .content-carrousel {
