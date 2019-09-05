@@ -15,30 +15,28 @@
 </head>
 
 <body>
-    <div class="contenedor-fluido">
-        <form action="contacto" name="contacto" method="post" class="form-registro">
-            <h1>Formulario de registro</h1>
-            <div class="contenedor-inputs">
-                <input id="nombre" type="text" name="nombre" placeholder="Nombre (requerido)" class="input-48" onblur="validarNombre()" required>
-                <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos (requerido)" class="input-48" onblur="validarApellido()" required>
-                <input id="email" type="text" name="email" placeholder="Email (requerido)" class="input-100" onblur="validarCorreo()" required>
-                <input id="usuario" type="text" name="usuario" placeholder="Usuario (requerido)" class="input-48" onblur="validarUsuario()" required>
-                <input type="password" name="clave" placeholder="Clave (requerido)" class="input-48" required>
-                <input id="fecha" name="fecha" type="date" min="2019-09-05" class="input-100" required>
-                <input id="telefono" type="number" name="telefono" placeholder="Teléfono " class="input-100" required>
-                <br>
-                <input type="submit" value="Registrar" class="btn-enviar" onclick="validarFormulario()">
-                <p class="form-link">¿ya tienes una cuenta?<a href="#">Ingrese aquí</a></p>
-                <p class="form-link">para regresar pincha en "Principal" <a href="index.html">Principal</a></p> <br>
-        </form>
+    <section class="col-xs-12 col-ms-6">
+        <div class="contenedor-fluido">
+            <form action="contacto" name="contacto" method="post" class="form-registro">
+                <h1>Formulario de registro</h1>
+                <div class="contenedor-inputs">
+                    <input id="nombre" type="text" name="nombre" placeholder="Nombre (requerido)" class="input-48" onblur="validarNombre()" required>
+                    <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos (requerido)" class="input-48" onblur="validarApellido()" required>
+                    <input id="email" type="text" name="email" placeholder="Email (requerido)" class="input-100" onblur="validarCorreo()" required>
+                    <input id="usuario" type="text" name="usuario" placeholder="Usuario (requerido)" class="input-48" onblur="validarUsuario()" required>
+                    <input type="password" name="clave" placeholder="Clave (requerido)" class="input-48" required>
+                    <input id="fecha" name="fecha" type="date" min="2000-09-05" class="input-100" required>
+                    <input id="telefono" type="number" name="telefono" placeholder="Teléfono " class="input-100" required>
+                    <br>
+                    <input type="submit" value="Registrar" class="btn-enviar" onclick="validarFormulario()">
+                    <p class="form-link">¿ya tienes una cuenta?<a href="#">Ingrese aquí</a></p>
+                    <p class="form-link">para regresar pincha en "Principal" <a href="index.html">Principal</a></p> <br>
+            </form>
+    </section>
+    <br>
 
-        <br>
-        <footer class="row">
-            <hr>
-            <span class=" col-xs-12  cursiva centrar">Contactanos al +56946210495</span>
-        </footer>
-        </div>
-        <script src="js/validarForm.js"></script>
+    </div>
+    <script src="js/validarForm.js"></script>
 </body>
 
 </html>
