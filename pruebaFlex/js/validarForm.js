@@ -137,7 +137,7 @@ function validarApellido() {
 
     // Texto obligatorio
     if (apellidos == null || apellidos.length == 0 || /^\s+$/.test(apellidos)) {
-        alert('ERROR: El campo nombre no debe ir vacío o lleno de solamente espacios en blanco');
+        alert('ERROR: El campo Apellido no debe ir vacío o lleno de solamente espacios en blanco');
         txtApellidos.classList.add('error');
     } else {
         txtApellidos.classList.remove('error');
@@ -158,7 +158,63 @@ function validarUsuario() {
     }
 }
 
-$(function({
-            $('#nmbre')
 
-        });
+$(function() {
+    $('#nombre').on('blur', function() {
+        var nombre = $('#nombre').val();
+
+        if (nombre == null || nombre.length == 0) {
+            alert('ERROR: El campo nombre no debe ir vacío' + nombre);
+            $('#nombre').addClass('error');
+            $('#nombre').removeClass('exito');
+        } else {
+            $('#nombre').removeClass('error');
+            $('#nombre').addClass('exito');
+        }
+    })
+});
+
+$(function() {
+    $('#email').on('blur', function() {
+        var email = $('#email').val();
+
+        if (email == null || email.length == 0) {
+            alert('ERROR: El campo email no debe ir vacío' + email);
+            $('#email').addClass('error');
+            $('#email').removeClass('exito');
+        } else {
+            $('#email').removeClass('error');
+            $('#email').addClass('exito');
+        }
+    })
+});
+
+$(function() {
+    $('#apellidos').on('blur', function() {
+        var apellidos = $('#apellidos').val();
+
+        if (apellidos == null || apellidos.length == 0) {
+            alert('ERROR: El campo apellidos no debe ir vacío' + apellidos);
+            $('#apellidos').addClass('error');
+            $('#apellidos').removeClass('exito');
+        } else {
+            $('#apellidos').removeClass('error');
+            $('#apellidos').addClass('exito');
+        }
+    })
+});
+
+$(function() {
+    $('#usuario').on('blur', function() {
+        var usuario = $('#usuario').val();
+
+        if (usuario == null || usuario.length == 0) {
+            alert('ERROR: El campo usuario no debe ir vacío' + usuario);
+            $('#usuario').addClass('error');
+            $('#usuario').removeClass('exito');
+        } else {
+            $('#usuario').removeClass('error');
+            $('#usuario').addClass('exito');
+        }
+    })
+});
