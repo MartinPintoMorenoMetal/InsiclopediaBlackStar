@@ -15,7 +15,7 @@ $(document).ready(function() {
                     email: true
                 },
 
-                c: {
+                apellidos: {
                     required: true,
                     apellidos: true
                 },
