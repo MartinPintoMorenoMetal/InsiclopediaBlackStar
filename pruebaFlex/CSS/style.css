@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.cuerpo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.Subtitulos {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.NombreCriatura {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    color: #ff0000;
+    text-align: center;
+}
+
+.CajaPaquete {
+    text-align: center;
+    height: 8rem;
+    padding: 8px 10px;
+    border: 4px solid rgb(133, 133, 133);
+    border-radius: 25px;
+    margin: 9px;
+}
+
+.cajaContenidoHistoria {
+    text-align: center;
+    height: auto;
+    padding: 2rem;
+}
+
+.cajaContenidoImagen {
+    text-align: center;
+    border: 4px solid #ffffff00;
+    align-content: center;
+    width: 60%;
+    display: block;
+    margin: auto;
+
+}
+
+.CajaFull {
+    width: 100%;
+}
+
+.izquierda {
+    float: left;
+    width: 50%;
+    padding-left: 100px;
+}
+
+
+.derecha {
+    float: right;
+    width: 50%;
+    padding-left: 200px;
+    padding-right: 100px;
+}
