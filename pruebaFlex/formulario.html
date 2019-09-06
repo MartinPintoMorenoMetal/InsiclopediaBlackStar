@@ -5,40 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-
     <link rel="stylesheet" href="css/estiloFormulario.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Formulario de Registro</title>
 </head>
 
 <body>
-    <section class="col-xs-12 col-ms-6">
-        <div class="contenedor-fluido">
-            <form action="contacto" name="contacto" method="post" class="form-registro">
-                <h1>Formulario de registro</h1>
-                <div class="contenedor-inputs">
-                    <input id="nombre" type="text" name="nombre" placeholder="Nombre (requerido)" class="input-48" onblur="validarNombre()" required>
-                    <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos (requerido)" class="input-48" onblur="validarApellido()" required>
-                    <input id="email" type="text" name="email" placeholder="Email (requerido)" class="input-100" onblur="validarCorreo()" required>
-                    <input id="usuario" type="text" name="usuario" placeholder="Usuario (requerido)" class="input-48" onblur="validarUsuario()" required>
-                    <input type="password" name="clave" placeholder="Clave (requerido)" class="input-48" required>
-                    <input id="fecha" name="fecha" type="date" min="2000-09-05" class="input-100" required>
-                    <input id="telefono" type="number" name="telefono" placeholder="Teléfono " class="input-100" required>
-                    <br>
-                    <input type="submit" value="Registrar" class="btn-enviar" onclick="validarFormulario()">
-                    <p class="form-link">¿ya tienes una cuenta?<a href="#">Ingrese aquí</a></p>
-                    <p class="form-link">para regresar pincha en "Principal" <a href="index.html">Principal</a></p>
-                    <br>
-                </div>
-            </form>
-        </div>
-    </section>
-    <br>
+    <header class="row clearfix:after redondo">
 
-    <script src="js/validarForm.js"></script>
+        <div class="logo col-xs-6 col-sm-6 col-md-6">
+            <a href="#">Black Star</a>
+        </div>
+        <div class="logo col-xs-6 col-sm-6 col-md-6>">
+            <nav>
+                <a class="redondo letraGamer col-xs-12 col-sm-3 " href="index.html ">Inicio</a>
+                <a class="redondo letraGamer col-xs-12 col-sm-3 " href="galeria.html ">Galería</a>
+                <a class="redondo letraGamer col-xs-12 col-sm-3 " href="criaturas.html ">Criaturas</a>
+                <a class="redondo letraGamer col-xs-12 col-sm-3 " href="formulario.html ">Registro</a>
+                <a class="redondo letraGamer col-xs-12 col-sm-3 " href="perfil.html ">Perfil</a>
+            </nav>
+        </div>
+    </header>
+    <h1>Formulario de registro</h1>
+    <form action="registrar.php" method="post" class="form-registro">
+        <h2 class="form-titulo">CREA UNA CUENTA</h2>
+        <div class="contenedor-inputs">
+            <input type="text" name="nombre" placeholder="Nombre" class="input-48" required>
+            <input type="text" name="apellidos" placeholder="Apellidos" class="input-48" required>
+            <input type="text" name="email" placeholder="Correo" class="input-100" required>
+            <input type="text" name="usuario" placeholder="Usuario" class="input-48" required>
+            <input type="password" name="clave" placeholder="Contraseña" class="input-48" required>
+            <input type="number" name="telefono" placeholder="Teléfono" class="input-100" required>
+            <input type="submit" value="Registrar" class="btn-enviar" required>
+            <p class="form-link">¿ya tienes una cuenta?<a href="#">Ingrese aquí</a></p>
+            <p class="form-link">para regresar pincha en "Principal" <a href="index.html">Principal</a></p>
+    </form>
 </body>
 
 </html>

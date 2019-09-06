@@ -51,8 +51,8 @@ header nav {
     border: 1rem;
     /* Flexbox */
     display: flex;
-    flex-wrap: wrap;
-    /* deja dos filas*/
+    /* flex-wrap: wrap;
+    deja dos filas*/
     align-items: center;
     font-family: 'Roboto', sans-serif;
     font-weight: black;

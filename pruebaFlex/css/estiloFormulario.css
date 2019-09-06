@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background: url('img/brillito.gif');
+    background: url('../img/brillito.gif');
 }
 
 h1 {
