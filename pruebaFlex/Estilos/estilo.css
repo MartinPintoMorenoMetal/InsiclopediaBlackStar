@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 *{
 
 
     margin: 10px;
+=======
+* {
+    margin: 0;
+>>>>>>> b8846053f192482bc4cfd3dcefb49c9707726cb0
     padding: 0;
     box-sizing: border-box;
 }
@@ -30,8 +35,12 @@ body {
 }
 
 header {
+<<<<<<< HEAD
     background: rgb(0, 0, 0);
 
+=======
+    background: rgb(31, 31, 31);
+>>>>>>> b8846053f192482bc4cfd3dcefb49c9707726cb0
 }
 
 header .logo {
@@ -60,7 +69,6 @@ header nav {
     ;
     font-weight: black;
 }
-
 
 header nav a {
     background: #9321c0;
@@ -194,7 +202,7 @@ footer .social a {
         flex-grow: 1;
     }
     aside .content-carrousel {
-        width: 50%;
+        width: 105%;
         height: auto;
     }
 }
@@ -209,11 +217,11 @@ footer .social a {
 }
 
 .content-all {
-    width: 210px;
+    width: 145px;
     margin: auto;
-    perspective: 800px;
+    perspective: 1000px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .content-carrousel {
