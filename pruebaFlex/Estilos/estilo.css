@@ -1,12 +1,8 @@
-
 * {
     margin: 2rem;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
 
 .contenedor {
     background: #252325;
@@ -16,7 +12,6 @@
     /* Flexbox */
     display: flex;
     flex-flow: row wrap;
-
 }
 
 .logo {
@@ -25,13 +20,11 @@
 }
 
 body {
-     background: url('../img/brillito.gif');
+    background: url('../img/brillito.gif');
 }
 
 header {
-
     background: rgb(31, 31, 31);
-
 }
 
 header .logo {
@@ -72,14 +65,12 @@ header nav a {
     /* Flexbox */
     flex-grow: 1;
     border-radius: 25px;
-
 }
 
 header nav a:hover {
     background: #e443ce;
     color: #000000;
-    text-decoration:none;
-
+    text-decoration: none;
 }
 
 .main {
@@ -117,7 +108,7 @@ aside {
 
 aside .widget {
     background: #fff;
-    height: 150px;
+    height: 180px;
     margin: 10px;
 }
 
@@ -132,18 +123,16 @@ footer {
 }
 
 footer .links {
-    
     background: #9321c0;
     color: #fff;
     text-align: center;
     margin: 3px;
     text-decoration: none;
-    padding: 1%;
-    font-size: 18px;
+    padding: 10%;
+    font-size: 10px;
     /* Flexbox */
     flex-grow: 1;
     border-radius: 25px;
-
 }
 
 footer .links a {
@@ -157,19 +146,16 @@ footer .links a {
 footer .links a:hover {
     background: #e443ce;
     color: #000000;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 footer .social a {
     background: #9321c0;
     color: #fff;
     text-decoration: none;
-    padding: 10px;
-    
+    padding: 15px;
     border-radius: 25px;
 }
-
-
 
 @media screen and (max-width: 800px) {
     .contenedor {
@@ -193,7 +179,7 @@ footer .social a {
         flex-grow: 1;
     }
     aside .content-carrousel {
-        width: 105%;
+        width: 90%;
         height: auto;
     }
 }
