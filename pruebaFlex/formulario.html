@@ -21,7 +21,6 @@
                 <a class="redondo letraGamer col-xs-12 col-sm-3 " href="index.html ">Inicio</a>
                 <a class="redondo letraGamer col-xs-12 col-sm-3 " href="galeria.html ">Galería</a>
                 <a class="redondo letraGamer col-xs-12 col-sm-3 " href="criaturas.html ">Criaturas</a>
-                <a class="redondo letraGamer col-xs-12 col-sm-3 " href="formulario.html ">Registro</a>
                 <a class="redondo letraGamer col-xs-12 col-sm-3 " href="perfil.html ">Perfil</a>
             </nav>
         </div>
@@ -30,16 +29,17 @@
     <form action="registrar.php" method="post" class="form-registro">
         <h2 class="form-titulo">CREA UNA CUENTA</h2>
         <div class="contenedor-inputs">
-            <input type="text" name="nombre" placeholder="Nombre" class="input-48" required>
-            <input type="text" name="apellidos" placeholder="Apellidos" class="input-48" required>
-            <input type="text" name="email" placeholder="Correo" class="input-100" required>
-            <input type="text" name="usuario" placeholder="Usuario" class="input-48" required>
+            <input type="text" name="nombre" placeholder="Nombre" class="input-48" onblur="validarNombre()" required>
+            <input type="text" name="apellidos" placeholder="Apellidos" class="input-48" onblur=" validarApellido()" required>
+            <input type="text" name="email" placeholder="Correo" class="input-100" onblur="validarCorreo()" required>
+            <input type="text" name="usuario" placeholder="Usuario" class="input-48" onblur=" validarUsuario()" required>
             <input type="password" name="clave" placeholder="Contraseña" class="input-48" required>
             <input type="number" name="telefono" placeholder="Teléfono" class="input-100" required>
             <input type="submit" value="Registrar" class="btn-enviar" required>
             <p class="form-link">¿ya tienes una cuenta?<a href="#">Ingrese aquí</a></p>
             <p class="form-link">para regresar pincha en "Principal" <a href="index.html">Principal</a></p>
     </form>
+
 </body>
 
 </html>
