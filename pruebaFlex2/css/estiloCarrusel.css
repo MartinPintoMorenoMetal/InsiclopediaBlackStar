@@ -52,6 +52,8 @@
     transform: rotateY(160deg) translateZ(300px);
 }
 
+
+/*
 .content-carrousel figure:nth-child(6) {
     transform: rotateY(200deg) translateZ(300px);
 }
@@ -71,6 +73,7 @@
 .content-carrousel figure:nth-child(10) {
     transform: rotateY(360deg) translateZ(300px);
 }
+*/
 
 .content-carrousel img {
     width: 100%;
