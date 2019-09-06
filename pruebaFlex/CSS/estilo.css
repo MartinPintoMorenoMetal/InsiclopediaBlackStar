@@ -43,7 +43,7 @@ header .logo img {
 header .logo a {
     color: #fff;
     text-decoration: none;
-    line-height: 50px;
+    line-height: 1.5rem;
 }
 
 header nav {
@@ -51,7 +51,8 @@ header nav {
     border: 1rem;
     /* Flexbox */
     display: flex;
-    /*flex-wrap: wrap; deja dos filas*/
+    flex-wrap: wrap;
+    /* deja dos filas*/
     align-items: center;
     font-family: 'Roboto', sans-serif;
     font-weight: black;
