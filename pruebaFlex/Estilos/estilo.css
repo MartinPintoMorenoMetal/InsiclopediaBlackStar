@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-*{
 
-
-    margin: 10px;
-=======
 * {
-    margin: 0;
->>>>>>> b8846053f192482bc4cfd3dcefb49c9707726cb0
+    margin: 2rem;
     padding: 0;
     box-sizing: border-box;
 }
@@ -31,16 +25,13 @@
 }
 
 body {
-    background: #212F3C;
+     background: url('../img/brillito.gif');
 }
 
 header {
-<<<<<<< HEAD
-    background: rgb(0, 0, 0);
 
-=======
     background: rgb(31, 31, 31);
->>>>>>> b8846053f192482bc4cfd3dcefb49c9707726cb0
+
 }
 
 header .logo {
