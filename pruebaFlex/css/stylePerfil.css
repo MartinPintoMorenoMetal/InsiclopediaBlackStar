@@ -10,6 +10,11 @@ p {
     color: #ffffff;
 }
 
+.centrado {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .redondo {
     border-radius: 25px;
 }
@@ -87,20 +92,6 @@ body {
     margin: auto;
 }
 
-.cajaImagenGaleria {
-    width: 70%;
-    border: 4px solid #ffffff;
-    border-radius: 25px;
-}
-
-.imagen_post {
-    width: 350px;
-    height: 350px;
-    display: block;
-    background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
 
 .CajaFull {
     width: 100%;
