@@ -5,74 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/flexboxgrid.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/styleCarrusel.css">
+    <link rel="stylesheet" href="css/styleGaleria.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap|" rel="stylesheet">
 </head>
 
 <body>
-    <div class="contenedor">
-        <header>
-            <div class="logo">
-                <a href="#">BLACK STAR</a>
+    <div class="container-fluid">
+
+        <header class="redondo">
+
+            <div class="row clearfix:after redondo">
+                <div class="logo col-md-12">
+                    <a class="Centrar" href="#">Black Star</a> <br>
+                    <img src="" alt="">
+                </div>
             </div>
 
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="criaturas.html">Criaturas</a>
-                <a href="formulario.html">Registro</a>
-                <a href="perfil.html">Perfil</a>
+            <nav class="row">
+
+                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="galeria.html ">Galería</a>
+                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="criaturas.html ">Criaturas</a>
+                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="formulario.html ">Registro</a>
+
             </nav>
         </header>
+        <section class=" main redondo">
+          
+                <ul class=" row galeria">
 
-        <div class="container">
-            <ul class="galeria">
-                <li>
-                    <a href="#img0"><img src="img/fox.jpg"></a>
-                </li>
-                <li>
-                    <a href="#img1"><img src="img/green_destructor.png"></a>
-                </li>
-                <li>
-                    <a href="#img2"><img src="img/lucius.png"></a>
-                </li>
+                    <li class="col-xs-12 col-sm-2">
+                        <a class="imagen_post" href="#img0"><img src="img/Kurguet.png"></a>
+                    </li>
+                    <li class="col-xs-12 col-sm-2">
+                        <a href="#img1"><img src="img/green_destructor.png"></a>
+                    </li>
+                    <li class="col-xs-12 col-sm-2">
+                        <a href="#img2"><img src="img/lucius.png"></a>
+                    </li>
 
-                <div class="modal" id="img0">
-                    <h3>Fox</h3>
-                    <div class="imagen">
-                        <div class="Retroceso"> <a href="#img2">&#60;</a> </div>
-                        <a href="#img1"><img src="img/fox.jpg"></a>
-                        <div class="siguiente"> <a href="#img1">></a> </div>
+                    <div class="modal" id="img0">
+                        <h3>Fox</h3>
+                        <div class="imagen">
+                            <div class="Retroceso"> <a href="#img2">&#60;</a> </div>
+                            <a href="#img1"><img src="img/fox.jpg"></a>
+                            <div class="siguiente"> <a href="#img1">></a> </div>
+                        </div>
+                        <a class="cerrar" href="">X</a>
                     </div>
-                    <a class="cerrar" href="">X</a>
-                </div>
 
-                <div class="modal" id="img1">
-                    <h3>Destructor verde</h3>
-                    <div class="imagen">
-                        <div class="Retroceso"> <a href="#img0">&#60;</a> </div>
-                        <a href="#img2"><img src="img/green_destructor.png"></a>
-                        <div class="siguiente"> <a href="#img2">></a> </div>
+                    <div class="modal" id="img1">
+                        <h3>Destructor verde</h3>
+                        <div class="imagen">
+                            <div class="Retroceso"> <a href="#img0">&#60;</a> </div>
+                            <a href="#img2"><img src="img/green_destructor.png"></a>
+                            <div class="siguiente"> <a href="#img2">></a> </div>
+                        </div>
+                        <a class="cerrar" href="">X</a>
                     </div>
-                    <a class="cerrar" href="">X</a>
-                </div>
 
-                <div class="modal" id="img2">
-                    <h3>Lucius</h3>
-                    <div class="imagen">
-                        <div class="Retroceso"> <a href="#img1">&#60;</a> </div>
-                        <a href="#img0"><img src="img/lucius.png"></a>
-                        <div class="siguiente"> <a href="#img0">></a> </div>
+                    <div class="modal" id="img2">
+                        <h3>Lucius</h3>
+                        <div class="imagen">
+                            <div class="Retroceso"> <a href="#img1">&#60;</a> </div>
+                            <a href="#img0"><img src="img/lucius.png"></a>
+                            <div class="siguiente"> <a href="#img0">></a> </div>
+                        </div>
+                        <a class="cerrar" href="">X</a>
                     </div>
-                    <a class="cerrar" href="">X</a>
-                </div>
-            </ul>
-        </div>
+                </ul>
+        </section>
+    </div>
 </body>
 
 </html>

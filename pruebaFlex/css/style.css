@@ -86,6 +86,14 @@ body {
     display: block;
     margin: auto;
 }
+.imagen_post{
+    width: 350px;
+    height: 350px;
+    display: block;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
 
 .CajaFull {
     width: 100%;
