@@ -78,8 +78,6 @@ body {
     border: none;
 }
 
-
-
 .cajaContenidoImagen {
     text-align: center;
     border: 4px solid #ffffff00;
@@ -89,12 +87,12 @@ body {
     margin: auto;
 }
 
-<<<<<<< HEAD:pruebaFlex/css/style.css
 .cajaImagenGaleria {
     width: 70%;
     border: 4px solid #ffffff;
     border-radius: 25px;
-=======
+}
+
 .imagen_post {
     width: 350px;
     height: 350px;
@@ -102,9 +100,7 @@ body {
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
->>>>>>> b5887702d3fb80c2dd369da8b71e8b32d866779a:pruebaFlex/css/stylePerfil.css
 }
-
 
 .CajaFull {
     width: 100%;
