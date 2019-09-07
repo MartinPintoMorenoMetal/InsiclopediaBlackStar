@@ -71,12 +71,14 @@ body {
     padding: auto;
 }
 
-.cajaBotonNab{
+.cajaBotonNab {
     text-align: center;
     height: auto;
     padding: auto;
     border: none;
 }
+
+
 
 .cajaContenidoImagen {
     text-align: center;
@@ -86,14 +88,13 @@ body {
     display: block;
     margin: auto;
 }
-.imagen_post{
-    width: 350px;
-    height: 350px;
-    display: block;
-    background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+
+.cajaImagenGaleria {
+    width: 70%;
+    border: 4px solid #ffffff;
+    border-radius: 25px;
 }
+
 
 .CajaFull {
     width: 100%;
