@@ -100,7 +100,7 @@ body {
 
 .container .list-image li .container__image {
     position: relative;
-    width: 280px;
+    /*width: 280px;  corre el fondo de la imagen*/
     height: 250px;
     background-color: #F0F3F4;
     border-radius: 3px;
