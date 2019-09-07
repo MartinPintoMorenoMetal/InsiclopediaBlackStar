@@ -12,8 +12,9 @@ var COLORS = [
 ];
 
 $(document).ready(
-
-    numero = Math.floor((Math.random() * 10) + 1), document.body.style.background = COLORS[numero],
-    setTimeout(ramdom, 1000)
-
+    function() {
+        numero = Math.floor((Math.random() * 10) + 1)
+        document.body.style.background = COLORS[numero]
+        setTimeout(ramdom, 1000)
+    }
 )
