@@ -12,9 +12,10 @@ var COLORS = [
 ];
 
 $(document).ready(
-    function() {
+    function ramdom() {
         numero = Math.floor((Math.random() * 10) + 1)
-        document.body.style.background = COLORS[numero]
+            //document.body.style.background = COLORS[numero]
+        document.getElementById("cuadrado").style.background = COLORS[numero]
         setTimeout(ramdom, 1000)
     }
 )
