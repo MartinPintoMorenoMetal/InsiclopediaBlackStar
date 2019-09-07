@@ -14,6 +14,26 @@ aside .widget {
     margin: 10px;
 }
 
+@media screen and (max-width: 600px) {
+    aside {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    aside {
+        flex-direction: row;
+        flex: 0;
+    }
+    aside .widget {
+        flex-grow: 1;
+    }
+    aside .content-carrousel {
+        width: 90%;
+        height: auto;
+    }
+}
+
 .content-all {
     width: 185px;
     margin: auto;
