@@ -92,7 +92,17 @@ body {
     margin: auto;
 }
 
-
 .CajaFull {
     width: 100%;
+}
+
+.sobre {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: none;
+}
+
+#encima {
+    position: relative;
 }
