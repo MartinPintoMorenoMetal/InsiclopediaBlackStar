@@ -1,4 +1,5 @@
 * {
+    margin: 0.8rem;
     padding: 0;
     box-sizing: border-box;
 }
@@ -25,9 +26,7 @@ body {
 }
 
 header {
-    background: rgb(31, 31, 31);
     padding: 2rem;
-    margin: 1rem;
 }
 
 header .logo {
@@ -59,6 +58,7 @@ header nav {
 }
 
 header nav a {
+    
     background: #9321c0;
     color: #fff;
     text-align: center;
@@ -99,7 +99,6 @@ header nav a:hover {
 }
 
 footer {
-    background: #161516;
     width: 100%;
     padding: 20px;
     margin: 1rem;
