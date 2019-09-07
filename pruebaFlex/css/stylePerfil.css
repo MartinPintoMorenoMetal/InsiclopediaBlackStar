@@ -99,16 +99,3 @@ body {
 .CajaFull {
     width: 100%;
 }
-
-.izquierda {
-    float: left;
-    width: 50%;
-    padding-left: 100px;
-}
-
-.derecha {
-    float: right;
-    width: 50%;
-    padding-left: 200px;
-    padding-right: 100px;
-}
