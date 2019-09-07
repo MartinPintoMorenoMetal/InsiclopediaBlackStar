@@ -58,7 +58,6 @@ header nav {
 }
 
 header nav a {
-    
     background: #9321c0;
     color: #fff;
     text-align: center;
@@ -157,23 +156,9 @@ footer .social a {
     header nav {
         width: 100%;
     }
-    aside {
-        flex-direction: row;
-        flex: 0;
-    }
-    aside .widget {
-        flex-grow: 1;
-    }
-    aside .content-carrousel {
-        width: 90%;
-        height: auto;
-    }
 }
 
 @media screen and (max-width: 600px) {
-    aside {
-        flex-direction: column;
-    }
     footer {
         justify-content: space-around;
     }
