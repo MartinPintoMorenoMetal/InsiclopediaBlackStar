@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+
 
 body {
     margin: 0;
@@ -13,11 +11,16 @@ h1 {
     text-align: center;
 }
 
+.TabronSuperior{
+    background: #66164e;
+
+}
+
 .form-registro {
     width: 95%;
     max-width: 500px;
     margin: auto;
-    background: white;
+    background: #fff;
     border-radius: 7px;
 }
 

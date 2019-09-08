@@ -10,6 +10,26 @@ p {
     color: #ffffff;
 }
 
+.BotonVolver {
+
+    padding: 8px 10px;
+    border-radius: 25px;
+    margin: 9px;
+    color: white;
+    text-align: center;
+    background: #9321c0;
+
+}
+.BotonVolver a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.ColorearContenido {
+    background: rgb(65, 47, 62);
+}
+
 .centrado {
     margin-left: auto;
     margin-right: auto;
@@ -35,8 +55,9 @@ body {
 
 .cuerpo {
     font-family: 'Press Start 2P', cursive;
-    font-size: 1.8rem;
+    font-size: 15px;
     color: #ffffff;
+    text-align: left;
 }
 
 .SubtitulosPreguntas {
@@ -56,7 +77,7 @@ body {
 .NombreCriatura {
     font-family: 'Press Start 2P', cursive;
     font-size: 32px;
-    color: #ff0000;
+    color: #ffffff;
     text-align: center;
 }
 
