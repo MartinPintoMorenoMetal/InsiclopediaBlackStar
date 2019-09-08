@@ -17,7 +17,7 @@
     <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="js/validarForm.js"></script>
 
-    <title>Formulario de Registro</title>
+    <title>Inicio de sesión</title>
 </head>
 
 <body>
@@ -34,19 +34,15 @@
             </nav>
         </div>
     </header>
-    <h1>Formulario de registro</h1>
     <form id="contacto" name="contacto" action="" method="post" class="form-registro">
-        <h2 class="form-titulo">CREA UNA CUENTA</h2>
+        <h2 class="form-titulo">Iniciar Sesión</h2>
         <div class="contenedor-inputs">
-            <input id="nombre" type="text" name="nombre" placeholder="Nombre" class="input-48" required onblur="validarNombre()">
-            <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos" class="input-48" required onblur=" validarApellido()">
-            <input id="email" type="text" name="email" placeholder="Correo" class="input-100" required onblur="validarCorreo()">
-            <input id="usuario" type="text" name="usuario" placeholder="Usuario" class="input-48" required onblur=" validarUsuario()">
-            <input id="clave" type="password" name="clave" placeholder="Contraseña" class="input-48" required>
-            <input id="telefono" type="number" name="telefono" placeholder="Teléfono" class="input-100" required>
-            <input id="btn-enviar" type="submit" value="Registrar" class="btn-enviar" ondblclick="validarFormulario()">
-            <p class="form-link">¿ya tienes una cuenta?<a href="formInicioSesion.html">Ingrese aquí  </a>
-
+            <input id="usuario" type="text" name="usuario" placeholder="Usuario (Requerido)" class="input-100" required onblur=" validarUsuario()"> <br>
+            <input id="clave" type="password" name="clave" placeholder="Contraseña (Requerio)" class="input-100" required>
+            <br>
+            <input id="btn-enviar" type="submit" value="Iniciar Sesión" class="btn-enviar" ondblclick="validarFormulario()">
+            <p class="form-link">¿Problemas para iniciar sesión?<a href="#">+56 46210495</a></p>
+            <p class="form-link">para registrarte pincha en<a href="formulario.html">Crear cuenta</a></p>
     </form>
 
 </body>
