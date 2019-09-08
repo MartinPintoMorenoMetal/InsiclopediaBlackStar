@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 p {
     font-family: 'Press Start 2P', cursive;
     font-size: 1rem;
@@ -12,20 +11,18 @@ p {
 }
 
 .BotonVolver {
-
-    padding: 8px 10px;
+    padding: 1rem;
     border-radius: 25px;
     margin: 9px;
     color: white;
     text-align: center;
     background: #9321c0;
-
 }
+
 .BotonVolver a:hover {
     color: #000000;
     text-decoration: none;
 }
-
 
 .ColorearContenido {
     background: rgb(65, 47, 62);
