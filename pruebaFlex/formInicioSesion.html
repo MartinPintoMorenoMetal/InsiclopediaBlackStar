@@ -8,10 +8,12 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/stylePerfil.css">
     <link rel="stylesheet" href="css/estiloFormulario.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap|" rel="stylesheet">
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
     <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -21,29 +23,79 @@
 </head>
 
 <body>
-    <header class="row clearfix:after redondo">
+    <div class="container-fluid">
+        <header class="redondo">
+            <div class="row clearfix:after redondo">
+                <div class="logo col-md-12">
+                    <a class="Centrar" href="#">Black Star</a> <br>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <nav class="row">
+                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="index.html">Inicio</a>
+                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="galeria.html ">Galería</a>
+                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="criaturas.html ">Criaturas</a>
 
-        <div class="logo col-xs-6 col-sm-6 col-md-6">
-            <a href="#">Black Star</a>
-        </div>
-        <div class="logo col-xs-6 col-sm-6 col-md-6>">
-            <nav>
-                <a class="redondo letraGamer col-xs-12 col-sm-3 " href="index.html ">Inicio</a>
-                <a class="redondo letraGamer col-xs-12 col-sm-3 " href="galeria.html ">Galería</a>
-                <a class="redondo letraGamer col-xs-12 col-sm-3 " href="criaturas.html ">Criaturas</a>
             </nav>
-        </div>
-    </header>
-    <form id="contacto" name="contacto" action="" method="post" class="form-registro">
-        <h2 class="form-titulo">Iniciar Sesión</h2>
-        <div class="contenedor-inputs">
-            <input id="usuario" type="text" name="usuario" placeholder="Usuario (Requerido)" class="input-100" required onblur=" validarUsuario()"> <br>
-            <input id="clave" type="password" name="clave" placeholder="Contraseña (Requerio)" class="input-100" required>
-            <br>
-            <input id="btn-enviar" type="submit" value="Iniciar Sesión" class="btn-enviar" ondblclick="validarFormulario()">
-            <p class="form-link">¿Problemas para iniciar sesión?<a href="#">+56 46210495</a></p>
-            <p class="form-link">para registrarte pincha en<a href="formulario.html">Crear cuenta</a></p>
+        </header>
+
+        <section>
+
+            <form id="contacto" name="contacto" action="" method="post" class="form-registro">
+                <h2 class="form-titulo titulo letraGamer Subtitulos">Iniciar Sesión</h2>
+                <div class=" row contenedor-inputs">
+
+                    <div class="row contenedor-inputs">
+                        
+                        <div class="col-xs-12 col-sm-12">
+                            <input id="usuario" type="text" name="usuario" placeholder="Usuario (Requerido)"
+                                class="input-100" required onblur=" validarUsuario()">
+
+                        </div>
+                    </div>
+
+                    <div class="row contenedor-inputs">
+                        <div class="col-xs-12 col-sm-12">
+                            <input id="clave" type="password" name="clave" placeholder="Contraseña (Requerio)"
+                                class="input-100" required>
+
+                        </div>
+                    </div>
+
+                    <div class="row contenedor-inputs">
+                        <div class="col-xs-12 col-sm-12">
+
+                            <input id="btn-enviar" type="submit" value="Iniciar Sesión" class="btn-enviar"
+                                ondblclick="validarFormulario()">
+
+                        </div>
+
+                    </div>
+
+                    <div class="row contenedor-inputs">
+                        <div class="col-xs-12 col-sm-12">
+
+                            <p class="form-link">¿Problemas para iniciar sesión?<a href="#">+56 46210495</a></p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12">
+
+                        <p class="form-link">para registrarte pincha en<a href="formulario.html">Crear cuenta</a></p>
+                        <br>
+                    </div>
+
+                </div>
+
+
+
+    </div>
     </form>
+    </section>
+
+    </div>
 
 </body>
 
