@@ -96,13 +96,17 @@ body {
     width: 100%;
 }
 
-.sobre {
+#sobre {
     position: absolute;
-    top: 0px;
+    top: 301px;
     left: 0px;
     border: none;
 }
 
 #encima {
     position: relative;
+}
+
+#img2 {
+    border: 0;
 }
