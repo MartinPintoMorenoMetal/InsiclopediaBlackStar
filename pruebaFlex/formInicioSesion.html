@@ -34,15 +34,23 @@
             </nav>
         </div>
     </header>
-    <form id="contacto" name="contacto" action="" method="post" class="form-registro">
-        <h2 class="form-titulo">Iniciar Sesión</h2>
+    <h1>Formulario de inicio de sesión</h1>
+    <form id="contact-form" method="post" class="form-registro">
+        <h2 class="form-titulo">Iniciar sesión</h2>
         <div class="contenedor-inputs">
-            <input id="usuario" type="text" name="usuario" placeholder="Usuario (Requerido)" class="input-100" required onblur=" validarUsuario()"> <br>
-            <input id="clave" type="password" name="clave" placeholder="Contraseña (Requerio)" class="input-100" required>
-            <br>
-            <input id="btn-enviar" type="submit" value="Iniciar Sesión" class="btn-enviar" ondblclick="validarFormulario()">
-            <p class="form-link">¿Problemas para iniciar sesión?<a href="#">+56 46210495</a></p>
-            <p class="form-link">para registrarte pincha en<a href="formulario.html">Crear cuenta</a></p>
+            <label for="message">Usuario</label>
+            <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Introduce tu nombre de usuario">
+        </div>
+
+        <div class="contenedor-inputs">
+            <label for="message">Contraseña</label>
+            <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Introduce tu contraseña de usuario">
+        </div>
+
+        <div class="contenedor-inputs">
+            <input class="btn btn-primary submit" type="submit" value="Enviar" />
+        </div>
+        <p class="form-link">Te invitamos a registrarte<a href="formulario.html">Ingrese aquí  </a>
     </form>
 
 </body>

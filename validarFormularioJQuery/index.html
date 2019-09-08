@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-xs-12 centrarImagen">
+                <img class="img-responsive" src="img/imagen1.png">
+            </div>
+        </header>
+
+        <section class="row main clearfix">
+            <section class="col-xs-12 col-md-6 izquierda">
+                <h1>Título Página Web</h1>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, praesentium quae magni expedita nam ex molestias, ducimus a odio quibusdam fuga minus amet ea qui, impedit dignissimos reiciendis itaque illum. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Numquam, praesentium quae magni expedita nam ex molestias, ducimus a odio quibusdam fuga minus amet ea qui, impedit dignissimos reiciendis itaque illum.
+                </p>
+            </section>
+            <section class="col-xs-12 col-md-6 derecha ">
+
+                <form id="contact-form" method="post">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Introduce tu nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Introduce tu email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="btn btn-primary submit" type="submit" value="Enviar" />
+                    </div>
+                </form>
+            </section>
+        </section>
+
+        <br>
+        <footer class="row ">
+            <hr>
+            <span class="col-xs-12 cursiva centrar ">Contáctenos al +56 9 99887766</span>
+        </footer>
+    </div>
+    <script src="js/valida.js"></script>
+</body>
+
+</html>
