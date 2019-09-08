@@ -68,7 +68,6 @@ header nav a {
     /* Flexbox */
     flex-grow: 1;
     border-radius: 25px;
-
 }
 
 header nav a:hover {
