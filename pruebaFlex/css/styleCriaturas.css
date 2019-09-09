@@ -21,7 +21,7 @@
 p {
     text-align: center;
     font-style: normal;
-    margin: 1rem;
+    margin: 0.3rem;
 }
 
 .centrar {
@@ -31,6 +31,10 @@ p {
 .colorRosa {
     background: #9321c0;
     border-radius: 25px;
+}
+
+.padding {
+    padding: 0.3rem;
 }
 
 
