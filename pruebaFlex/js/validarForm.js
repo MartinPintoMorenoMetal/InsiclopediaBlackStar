@@ -59,7 +59,7 @@ $(function() {
 });
 
 $(document).ready(function() {
-    $("#contact-form").validate({
+    $("#contact-form1").validate({
         event: "blur",
         rules: { 'nombre': "required", 'email': "required email", 'apellidos': "required", 'usuario': "required", 'contraseña': "required" },
         messages: { 'nombre': "Por favor, indica tu nombre", 'email': "Por favor, indica tu correo", 'apellidos': "Por favor, indica tus apellidos", 'usuario': "Por favor, indica tu nombre de usuario", 'contraseña': "Por favor, indica tu contraseña de usuario" },
