@@ -77,3 +77,15 @@ input {
     text-align: center;
     color: #e74c3c
 }
+
+.error {
+    border-color: #993333;
+}
+
+label.error {
+    color: red;
+    width: 300px;
+    font-size: 0.8em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}

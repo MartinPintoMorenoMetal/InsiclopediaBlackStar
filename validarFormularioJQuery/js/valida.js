@@ -1,4 +1,5 @@
 //jquery
+/*
 $(function() {
     ("#contacto").validate({
         rules: {
@@ -25,7 +26,7 @@ $(function() {
         }
     });
 });
-
+*/
 $(document).ready(function() {
     $("#contact-form").validate({
         event: "blur",
@@ -98,8 +99,6 @@ $(function() {
 
     })
 });
-
-javaScript
 
 function validarNombre() {
 

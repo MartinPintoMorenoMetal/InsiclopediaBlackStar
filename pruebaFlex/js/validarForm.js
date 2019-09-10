@@ -1,4 +1,5 @@
 //jquery
+/*
 $(function() {
     ("#contacto").validate({
         rules: {
@@ -57,9 +58,9 @@ $(function() {
         }
     });
 });
-
+*/
 $(document).ready(function() {
-    $("#contact-form1").validate({
+    $("#contact-form").validate({
         event: "blur",
         rules: { 'nombre': "required", 'email': "required email", 'apellidos': "required", 'usuario': "required", 'contraseña': "required" },
         messages: { 'nombre': "Por favor, indica tu nombre", 'email': "Por favor, indica tu correo", 'apellidos': "Por favor, indica tus apellidos", 'usuario': "Por favor, indica tu nombre de usuario", 'contraseña': "Por favor, indica tu contraseña de usuario" },
@@ -166,8 +167,6 @@ $(function() {
 
     })
 });
-
-javaScript
 
 function validarNombre() {
 
