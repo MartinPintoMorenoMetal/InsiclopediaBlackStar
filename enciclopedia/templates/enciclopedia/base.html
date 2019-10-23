@@ -1,0 +1,27 @@
+{% load staticfiles %}
+{% load staticfiles %}
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/flexboxgrid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/stylePerfil.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styleCriaturas.css' %}">
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Criaturas</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        {% block content %}
+        {% endblock %}        
+    </div>
+</body>
+
+</html>
+
