@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% load staticfiles %}<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -8,8 +8,8 @@
     <title>Garrashy</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/flexboxgrid.css">
-    <link rel="stylesheet" href="css/stylePerfil.css">
+    <link rel="stylesheet" href="{% static 'css/flexboxgrid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/stylePerfil.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 
@@ -28,7 +28,7 @@
         <div class="row clearfix:after">
             <div class="col-xs-12">
                 <div class="CajaPaquete BotonVolver">
-                    <a href='criaturas.html' class="Subtitulos"> Volver </a>
+                    <a href='criaturas' class="Subtitulos"> Volver </a>
                 </div>
             </div>
         </div>
@@ -52,12 +52,12 @@
                     <h2 class="Subtitulos">Poder</h2><br>
                     <p class="cuerpo">Bola inflamable</p>
                 </div>
-                <div id="div"><img src="img/ra.webp" alt="" id="gif"></div>
+                <div id="div"><img src="static/img/ra.webp" alt="" id="gif"></div>
             </div>
             <div class="col-xs-12 col-sm-5">
                 <div>
-                    <a title="Garrashy" href="img/Garrashy_modelo.png">
-                        <img class="cajaContenidoImagen" src="img/Garrashy_modelo.png"></a>
+                    <a title="Garrashy" href="static/img/Garrashy_modelo.png">
+                        <img class="cajaContenidoImagen" src="static/img/Garrashy_modelo.png"></a>
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
         <div class="row CajaPaquete cajaContenidoHistoria ColorearContenido">
             <div class="col-xs-12 col-sm-4">
                 <h1 class="Subtitulos">Estadisticas</h1> <br>
-                <table class="table cuerpo">
+                <table class="table  cuerpo">
                     <thead>
                         <tr>
                             <th scope="col">Atributos</th>
@@ -104,8 +104,8 @@
             </div>
 
             <div class="col-xs-12 col-sm-4">
-                <a title="salitrera" href="img/270px-Oficina_salitrera_Santiago_Humberstone,_Región_de_Tarapacá,_Chile.jpg">
-                    <img class="CajaFull" src="img/270px-Oficina_salitrera_Santiago_Humberstone,_Región_de_Tarapacá,_Chile.jpg"></a>
+                <a title="salitrera" href="static/img/270px-Oficina_salitrera_Santiago_Humberstone,_Región_de_Tarapacá,_Chile.jpg">
+                    <img class="CajaFull" src="static/img/270px-Oficina_salitrera_Santiago_Humberstone,_Región_de_Tarapacá,_Chile.jpg"></a>
 
             </div>
         </div>
@@ -121,7 +121,7 @@
 
     </div>
 
-    <script src="js/poderRasengan.js"></script>
+    <script src="{% static 'js/poderRasengan.js' %}"></script>
 
 </body>
 

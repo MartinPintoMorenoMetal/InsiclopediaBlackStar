@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    background: #252325;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    /* Flexbox */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.logo {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+body {
+    margin: 2rem;
+    /*esto no va en *{}*/
+    background: url('../img/brillito.gif');
+}
+
+header {
+    padding: 2rem;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 30px;
+}
+
+header .logo img {
+    width: 50px;
+    vertical-align: top;
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.5rem;
+}
+
+header nav {
+    width: 50%;
+    border: 1rem;
+    /* Flexbox */
+    display: flex;
+    /* flex-wrap: wrap;
+    deja dos filas*/
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: black;
+}
+
+header nav a {
+    background: #9321c0;
+    color: #fff;
+    text-align: center;
+    margin: 3px;
+    text-decoration: none;
+    padding: 1%;
+    font-size: 18px;
+    /* Flexbox */
+    flex-grow: 1;
+    border-radius: 25px;
+}
+
+header nav a:hover {
+    background: #e443ce;
+    color: #000000;
+    text-decoration: none;
+}
+
+.main {
+    background: rgb(65, 47, 62);
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: Regular;
+    flex: 1 1 70%;
+    /*flex:1;*/
+}
+
+.main article {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.main article:nth-last-child(1) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    margin: 1rem;
+    /* Flexbox */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .links {
+    background: #9321c0;
+    color: #fff;
+    text-align: center;
+    margin: 3px;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 10px;
+    /* Flexbox */
+    flex-grow: 1;
+    border-radius: 25px;
+}
+
+footer .links a {
+    flex-grow: 1;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer .links a:hover {
+    background: #e443ce;
+    color: #000000;
+    text-decoration: none;
+}
+
+footer .social a {
+    background: #9321c0;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor {
+        flex-direction: column;
+    }
+    header {
+        flex-direction: column;
+        padding: 0;
+    }
+    header .logo {
+        margin: 20px 0;
+    }
+    header nav {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        justify-content: space-around;
+    }
+}
