@@ -11,15 +11,21 @@ class Post(models.Model):
     published_date = models.DateTimeField(
             blank=True, null=True)
  
- class Venue(models.Model):
-     nombreUsuario = models.CharField('Venue Name', max_length=120)
-     Contraseña = models.CharField(max_length=300)
-     zip_code = models.CharField('Zip/Post Code', max_length=12)
-     email_address = models.EmailField('Email Address')
+class Usuario(models.Model):
+    nombreUsuario = models.CharField('Usuario Name', max_length=120)
+    Contraseña = models.CharField(max_length=300)
+    email_address = models.EmailField('Email Address')
 
 def __str__(self):
   return self.nombreUsuario
       
+class ImagenGalleria(models.Model):
+    autor = models.ForeignKey('Usuario.nombreUsuario')
+    image = models.ImageField(upload_to='static/img/')
+    nombreimagen = models.CharField(max_length=120)
+    Criatura = models.CharField(max_length=120)
+
+
 
 
 
