@@ -12,7 +12,8 @@ class Post(models.Model):
             blank=True, null=True)
  
 class Usuario(models.Model):
-    nombreUsuario = models.CharField('Usuario Name', max_length=120)
+    nombresUsuario = models.CharField('Usuario Name', max_length=120)
+    apellidoUsuario = models.CharField('Usuario Name', max_length=120)   
     Contraseña = models.CharField(max_length=300)
     email_address = models.EmailField('Email Address')
 
