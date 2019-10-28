@@ -25,33 +25,21 @@
 
 <body>
 
-    <div class="container-fluid">
-        <header class="redondo">
-            <div class="row clearfix:after redondo">
-                <div class="logo col-md-12">
-                    <a class="Centrar" href="index">Black Star</a>
-                </div>
-            </div>
-            <nav class="row">
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="index">Inicio</a>
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="galeria ">Galería</a>
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="criaturas ">Criaturas</a>
-            </nav>
-        </header>
-    </div>
     <h1 class="titulo letraGamer Subtitulos">Formulario de inicio de sesión</h1>
-    <form id="contact-form" method="post" class="form-registro">
+    <form method="POST" class="form-registro">
+
+        {% csrf_token%}
         <h2 class="form-titulo letraGamer">Iniciar sesión</h2>
         <div class="contenedor-inputs">
+
+
             <label for="message">Usuario</label>
-            <input type="text" class="form-control" id="usuario" name="usuario"
-                placeholder="Introduce tu nombre de usuario">
+            <input type="text" class="form-control" id="usuario" name="username" placeholder="Introduce tu nombre de usuario">
         </div>
 
         <div class="contenedor-inputs">
             <label for="message">Contraseña</label>
-            <input type="password" class="form-control" id="contraseña" name="contraseña"
-                placeholder="Introduce tu contraseña de usuario">
+            <input type="password" class="form-control" id="contraseña" name="password" placeholder="Introduce tu contraseña de usuario">
         </div>
 
         <div class="contenedor-inputs">

@@ -1,7 +1,9 @@
 from django.urls import path
+from django.contrib.auth,views import login, logout_then_login
 from . import views
  
 urlpatterns = [
+    
     path('', views.index, name='index'),
     path('index', views.index, name='index'),
     path('criaturas', views.criaturas, name='criaturas'),
