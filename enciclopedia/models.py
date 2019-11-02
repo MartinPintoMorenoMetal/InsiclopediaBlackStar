@@ -41,3 +41,12 @@ class Meta:
         ('userVip',_('Es usuario VIP')),
         ('usuario',_('Es usuario')),
     )
+
+def post_list (request):
+    user = request.user
+    if user.has_perm('enciclopedia.userVip'):
+        posts = Post.objects.filter(
+            published_date__lite=timezone.now()).order_by('published_date')
+        return render(request, 'enciclopedia/templates/login.html' , {'posts' : posts})
+    else:
+        return render (request, 'enciclopedia/home.html')
