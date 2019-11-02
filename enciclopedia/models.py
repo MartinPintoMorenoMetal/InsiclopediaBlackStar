@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.utils.translation import ugettext as _
  
  
 class Post(models.Model):
@@ -28,13 +29,15 @@ class ImagenGalleria(models.Model):
 
 
 
-
-
-
-
 def publish(self):
     self.published_date = timezone.now()
     self.save()
  
 def __str__(self):
     return self.title
+
+class Meta:
+    permissions = (
+        ('userVip',_('Es usuario VIP')),
+        ('usuario',_('Es usuario')),
+    )
