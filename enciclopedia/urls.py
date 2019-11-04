@@ -1,9 +1,6 @@
 from django.contrib import admin
-from django.urls import path.include
+from django.urls import include, path
 from django.contrib.auth.decorators import login_required
-from django.enciclopedia.views import Inicio
-
-from django.urls import path
 from . import views
  
 urlpatterns = [
@@ -21,6 +18,6 @@ urlpatterns = [
     path('perfilD', views.perfilD, name='perfilD'),
     
     
-    path('enciclopedia/',include(('apps.enciclopedia.urls','enciclopedia'))),
-    path('',login_required(Inicio.as_view()), name = 'index'),
+    path('enciclopedia/',include('apps.enciclopedia.urls','enciclopedia')),
+    #path('',login_required(Inicio.as_view()), name = 'index'),
 ]
