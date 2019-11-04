@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django.utils.translation import ugettext as _
 
-#prueba
+#Prueba Mauro considero que esa la clase post no se usara en este por, se debe quitar   
 class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
