@@ -10,7 +10,10 @@ class Post(models.Model):
     created_date = models.DateTimeField(
             default=timezone.now)
     published_date = models.DateTimeField(
-            blank=True, null=True)
+            blank=True, null=True)    
+     
+    def __str__(self):
+        return self.title
  
 class Usuario(models.Model):
     nombresUsuario = models.CharField('Usuario Name', max_length=120)
@@ -18,8 +21,8 @@ class Usuario(models.Model):
     Contraseña = models.CharField(max_length=300)
     email_address = models.EmailField('Email Address')
 
-def __str__(self):
-  return self.nombreUsuario
+    def __str__(self):
+        return self.nombreUsuario
       
 class ImagenGalleria(models.Model):
     autor = models.ForeignKey('Usuario.nombreUsuario')
@@ -27,14 +30,15 @@ class ImagenGalleria(models.Model):
     nombreimagen = models.CharField(max_length=120)
     Criatura = models.CharField(max_length=120)
 
+    def __unicode__(self,):
+        return str(self.image)
+
 
 
 def publish(self):
     self.published_date = timezone.now()
     self.save()
- 
-def __str__(self):
-    return self.title
+
 
 class Meta:
     permissions = (
