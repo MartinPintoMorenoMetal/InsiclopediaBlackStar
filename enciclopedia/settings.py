@@ -114,6 +114,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+#En esta version de Django revisare si ya no se aplica esto
 LOGIN_REDIRECT_URL = reverse_lazy('index')
 LOGOUT_REDIRECT_URL = reverse_lazy ('login')
 
