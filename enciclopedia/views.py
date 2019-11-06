@@ -32,7 +32,7 @@ def perfilD(request):
 
 def post_list (request):
     user = request.user
-    if user.has_perm('enciclopedia.userVip'):
+    if user.has_perm('enciclopedia.duoc.2019'):
         posts = Post.objects.filter(
             published_date__lite=timezone.now()).order_by('published_date')
         return render(request, 'enciclopedia/templates/login.html' , {'posts' : posts})
