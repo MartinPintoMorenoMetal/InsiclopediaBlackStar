@@ -29,8 +29,8 @@ class Usuario(models.Model):
 
     class Meta:
         permissions = (
-            ('userVip',_('Es usuario VIP')),
-            ('usuario',_('Es usuario')),
+            ('admin',_('Es admin')),
+            ('duoc.2019',_('Es duoc.2019')),
         )     
        
       
