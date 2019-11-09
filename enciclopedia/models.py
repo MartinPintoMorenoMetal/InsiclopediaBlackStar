@@ -40,7 +40,6 @@ class ImagenGalleria(models.Model):
     nombreimagen = models.CharField(max_length=120)
     criatura = models.CharField(max_length=120)
 
-<<<<<<< HEAD
 
 def publish(self):
     self.published_date = timezone.now()
@@ -48,7 +47,3 @@ def publish(self):
  
 def __str__(self):
     return self.title
-=======
-    def __unicode__(self,):
-        return str(self.image)
->>>>>>> 27a118067a39dff8a8f022926321ae44cddc95b1
