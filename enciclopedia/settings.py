@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'enciclopedia',
 ]
 
 MIDDLEWARE = [
@@ -114,6 +114,9 @@ USE_L10N = True
 
 USE_TZ = True
 
+#En esta version de Django revisare si ya no se aplica esto
+LOGIN_REDIRECT_URL = reverse_lazy('index')
+LOGOUT_REDIRECT_URL = reverse_lazy ('login')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/

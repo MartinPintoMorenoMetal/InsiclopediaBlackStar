@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.utils import timezone
+
 
 # Create your views here.
 def index(request):
@@ -28,3 +30,11 @@ def perfilC(request):
 def perfilD(request):
     return render(request, 'enciclopedia/perfilD.html')
 
+def post_list (request):
+    user = request.user
+    if user.has_perm('enciclopedia.duoc.2019'):
+        posts = Post.objects.filter(
+            published_date__lite=timezone.now()).order_by('published_date')
+        return render(request, 'enciclopedia/templates/login.html' , {'posts' : posts})
+    else:
+        return render (request, 'enciclopedia/home.html')
