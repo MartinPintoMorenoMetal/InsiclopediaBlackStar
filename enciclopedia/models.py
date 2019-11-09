@@ -27,11 +27,6 @@ class ImagenGalleria(models.Model):
     Criatura = models.CharField(max_length=120)
 
 
-
-
-
-
-
 def publish(self):
     self.published_date = timezone.now()
     self.save()
