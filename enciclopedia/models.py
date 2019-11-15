@@ -6,8 +6,8 @@ from django.utils.translation import ugettext as _
 class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
+    url = models.CharField(max_length=200)
     text = models.TextField()
-    #url = models.CharField(max_length=200)
     created_date = models.DateTimeField(
             default=timezone.now)
     published_date = models.DateTimeField(
