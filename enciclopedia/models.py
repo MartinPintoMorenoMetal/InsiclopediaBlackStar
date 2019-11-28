@@ -26,3 +26,6 @@ class Post(models.Model):
             ('administrador',_('Es administrador')),
             ('cliente',_('Es cliente')),
         )
+
+#modelo Base de datos para guardar imagenes 
+
