@@ -18,18 +18,23 @@ def formulario(request):
 def sesion(request):
     return render(request, 'enciclopedia/sesion.html')
 
+#galleria 
 def galeria(request):
+
     return render(request, 'enciclopedia/galeria.html')
 
-def perfilA(request):
+def listaperfilA(request):
     return render(request, 'enciclopedia/perfilA.html')
 
-def perfilB(request):
+def listaperfilB(request):
     return render(request, 'enciclopedia/perfilB.html')
 
-def perfilC(request):
+def listaperfilC(request):
     return render(request, 'enciclopedia/perfilC.html')
 
-def perfilD(request):
+def listaperfilD(request):
     return render(request, 'enciclopedia/perfilD.html')
+
+
+
 
