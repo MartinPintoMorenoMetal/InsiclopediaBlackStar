@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from .views import index,galeria,listaperfilA,listaperfilB,listaperfilC,listaperfilD
+from .views import index,galeria,listaperfilA,listaperfilB,listaperfilC,listaperfilD,Nuevo_Post
 
 from django.conf.urls import url, include
 from rest_framework import routers
@@ -8,6 +8,7 @@ from rest_framework import routers
 
 urlpatterns = [
 
+    path('Nuevo_Post/',Nuevo_Post, name="Nuevo_Post"),
     path('', views.index, name='index'),
     path('index', views.index, name='index'),
     path('criaturas', views.criaturas, name='criaturas'),

@@ -32,29 +32,25 @@
         </header>
 
         <div class="main redondo galeria  ">
-                <h2 class="letraGamer">Galeria</h2>
             <div class="item active">
+                <h2 class="letraGamer">Nuevo Post</h2>
                 <div class="row">
 
-                    <table class="table table-dark" >
-                        <tr>
+                    <form style="color:rgb(245, 51, 187)" action="" method="POST">
+                        {% csrf_token %}
+                        <table>
+                            {{ form.as_table }}
 
-                            <th style="color:rgb(245, 51, 187)";>nombre de imagen</th>
-                            <th style="color:rgb(245, 51, 187)";>criatura</th>
-                            <th style="color:rgb(245, 51, 187)";>Descripcion</th>
-                            <th style="color:rgb(245, 51, 187)";>fecha</th>
+                        </table>
 
-                        </tr>
-                        {% for p in Posts%}
-                        <tr>
-                            <th style="color:rgb(255, 255, 255)";>{{ p.title }}</th>
-                            <th style="color:rgb(255, 255, 255)";>{{ p.criarue }}</th>
-                            <th style="color:rgb(255, 255, 255)";>{{ p.Descripcion }}</th>
-                            <th style="color:rgb(255, 255, 255)";>{{ p.created_date }}</th>
-                        </tr>
-                        {% endfor %}
+                        <input type="reset" value="limpiar">
+                        <input type="submit" value="Subir">
+                        
 
-                    </table>
+
+                    </form>
+                    {{ mensaje }}
+
                 </div>
             </div>
         </div>
