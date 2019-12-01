@@ -28,6 +28,20 @@
                 </div>
             </div>
 
+
+            {% if user.is_authenticated %}
+            <div class="row clearfix:after main redondo ">
+                <li>
+                    <a class="letraGamer" href="#"> {{ user.username }}</a>
+
+                </li>
+                <li>
+                    <a class="letraGamer" href="{% url 'logout' %}"> Cerrar Sesion</a>
+                </li>
+            </div>
+            {% endif %}
+
+
             <nav class="row">
                 <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="galeria ">Galería</a>
                 <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="criaturas ">Criaturas</a>
@@ -39,19 +53,25 @@
 
             <article class="col-xs-12 col-sm-4 ">
                 <h2 class="SubtitulosPreguntas letraGamer ">Debes saber que</h2>
-                <p>Para conocer la visión de esta página, cumple con invitar a cada artista a publicar sus personajes animados en esta entretenida galeria de exposición , además, puedes ver y conocer dieños de otros artistas y descargarlos de forma gratuida.
+                <p>Para conocer la visión de esta página, cumple con invitar a cada artista a publicar sus personajes
+                    animados en esta entretenida galeria de exposición , además, puedes ver y conocer dieños de otros
+                    artistas y descargarlos de forma gratuida.
                 </p>
             </article>
 
             <article class="col-xs-12 col-sm-4 ">
                 <h2 class="SubtitulosPreguntas letraGamer ">¿Que encontrarás?</h2>
-                <p>Podrás encontrar la mejor galeria fotografica de los artistas registrados, además conoceras sus ideas y nuevas entregas a futuro, te invitamos a seguir y revisar detalladamente los diseños que ofrece cada dibujante del área de personajes.
+                <p>Podrás encontrar la mejor galeria fotografica de los artistas registrados, además conoceras sus ideas
+                    y nuevas entregas a futuro, te invitamos a seguir y revisar detalladamente los diseños que ofrece
+                    cada dibujante del área de personajes.
                     Si quieres sabér mas, te invitamos a revisar la galería y criaturas.</p>
             </article>
 
             <article class="col-xs-12 col-sm-12 ">
                 <h2 class="SubtitulosPreguntas letraGamer ">Información</h2>
-                <p>En Criaturas, encontrarás exposiciones animadas de otros artistas, las fotos mas visitadas por los usuarios de la red. Galería, conocerás otros diseños de artistas mas frecuentados. Invitamos a cada artista a registrase y publicar sus
+                <p>En Criaturas, encontrarás exposiciones animadas de otros artistas, las fotos mas visitadas por los
+                    usuarios de la red. Galería, conocerás otros diseños de artistas mas frecuentados. Invitamos a cada
+                    artista a registrase y publicar sus
                     diseños animados, con la finalidad de enseñar mas que una idea.
                 </p>
             </article>

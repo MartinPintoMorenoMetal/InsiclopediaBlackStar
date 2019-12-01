@@ -24,33 +24,46 @@
                     <a class="Centrar" href="index">Black Star</a>
                 </div>
             </div>
+            {% if user.is_authenticated %}
+            <div class="row clearfix:after main redondo ">
+                <li>
+                    <a class="letraGamer" href="#"> {{ user.username }}</a>
+
+                </li>
+                <li>
+                    <a class="letraGamer" href="{% url 'logout' %}"> Cerrar Sesion</a>
+                </li>
+            </div>
+            {% endif %}
             <nav class="row">
                 <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'index' %}">Inicio</a>
                 <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'criaturas' %} ">Criaturas</a>
                 <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'sesion' %}">login</a>
             </nav>
         </header>
-
+        <a class="col-xs-12 col-sm-12 CajaPaquete cajaBotonNab letraGamer " href="{% url 'galeria' %}">Volver Galeria</a>
         <div class="main redondo galeria  ">
             <div class="item active">
                 <h2 class="letraGamer">Modificar Post</h2>
                 <div class="row">
 
-                    <form style="color:rgb(245, 51, 187)" action="" method="POST">
+                    <form style="color:rgb(245, 51, 187)" action="" method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
                         <table>
                             {{ form.as_table }}
 
                         </table>
 
-                       
                         <input type="submit" value="Modificar">
                         
                     </form>
-                    {{ mensaje }}
+                    
+                   <p class="letraGamer"> {{ mensaje }} </p> 
                 </div>
             </div>
+          
         </div>
+        
     </div>
     </div>
 </body>

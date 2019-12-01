@@ -33,37 +33,35 @@
                 </div>
             </div>
             <nav class="row">
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="index">Inicio</a>
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="galeria ">Galería</a>
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="criaturas ">Criaturas</a>
+                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'index' %}">Inicio</a>
+                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer "
+                    href="{% url 'criaturas' %} ">Criaturas</a>
+                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'sesion' %}">login</a>
             </nav>
         </header>
     </div>
-    <h1 class="titulo letraGamer Subtitulos">Formulario de inicio de sesión</h1>
-    <form id="contact-form" method="post" class="form-registro">
-        <h2 class="form-titulo letraGamer">Iniciar sesión</h2>
-        <div class="contenedor-inputs">
-            <label for="message">Usuario</label>
-            <input type="text" class="form-control" id="usuario" name="usuario"
-                placeholder="Introduce tu nombre de usuario">
-        </div>
+    <h1 class="titulo letraGamer Subtitulos">inicio de sesión</h1>
+    <div class="container-fluid">
+        <div style="color:rgb(245, 51, 187)" class="main redondo galeria">
+            <form method="post">
 
-        <div class="contenedor-inputs">
-            <label for="message">Contraseña</label>
-            <input type="password" class="form-control" id="contraseña" name="contraseña"
-                placeholder="Introduce tu contraseña de usuario">
-        </div>
+                {% csrf_token %}
 
-        <div class="contenedor-inputs">
-            <input class="btn btn-primary submit letraGamer" type="submit" value="Enviar" />
+                {{ form.as_table }}
+
+
+
+                <input style="color:rgb(245, 51, 187)" type="submit" value="Login">
+
+            </form>
         </div>
-        <p class="form-link">Te invitamos a registrarte <a href="formulario">Ingrese aquí </a></p><br>
-    </form>
+    </div>
     <footer class="redondo ">
         <div class="social col-xs-12 col-sm-3">
             <a href="#"><i class="far fa-arrow-alt-circle-up"></i></a>
             <a href="https://www.deviantart.com/thorkam"><i class="fab fa-blogger "></i></a>
-            <a href="https://www.facebook.com/Nitram-1028866417279715/" target="_black"><i class="fab fa-facebook "></i></a>
+            <a href="https://www.facebook.com/Nitram-1028866417279715/" target="_black"><i
+                    class="fab fa-facebook "></i></a>
         </div>
 
     </footer>

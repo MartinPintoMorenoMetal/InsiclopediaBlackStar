@@ -4,12 +4,20 @@ from django.utils.translation import ugettext as _
 
 #Criaturas
 
+class Creature(models.Model):
+    nameCreature = models.CharField(max_length=40)
+
+    def __str__(self):
+        return self.nameCreature
+
+
+
 class Post(models.Model):
     title = models.CharField(max_length=200)
-    criarue = models.CharField(max_length=200)
+    criarue = models.ForeignKey(Creature, on_delete=models.CASCADE)
     Descripcion = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
-  
+    imagen = models.ImageField( blank=True)
    
     def publish(self):
         self.published_date = timezone.now()

@@ -30,6 +30,17 @@
                     <a class="Centrar" href="index">Black Star</a>
                 </div>
             </div>
+            {% if user.is_authenticated %}
+            <div class="row clearfix:after main redondo ">
+                <li>
+                    <a class="letraGamer" href="#"> {{ user.username }}</a>
+
+                </li>
+                <li>
+                    <a class="letraGamer" href="{% url 'logout' %}"> Cerrar Sesion</a>
+                </li>
+            </div>
+            {% endif %}
             <nav class="row">
                 <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="index">Inicio</a>
                 <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="galeria">Galería</a>
@@ -38,6 +49,7 @@
         </header>
     </div>
     <h1 class="  letraGamer Subtitulos">Formulario de registro</h1>
+
     <form id="contact-form" method="post" class="form-registro">
         <h2 class="form-titulo letraGamer">Registrarse</h2>
         <div class="contenedor-inputs">

@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect
 from django.utils import timezone
 from .models import Post
 from .Froms import PostFrom
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
@@ -30,6 +31,11 @@ def sesion(request):
 #galleria 
 
 def listaperfilA(request):
+
+    #Posts = Post.objects.get(criarue = 1)
+    #data ={
+      #  'Posts':Posts
+    #}   
     return render(request, 'enciclopedia/perfilA.html')
 
 def listaperfilB(request):
@@ -38,10 +44,7 @@ def listaperfilB(request):
 def listaperfilC(request):
     return render(request, 'enciclopedia/perfilC.html')
 
-def listaperfilD(request):
-    return render(request, 'enciclopedia/perfilD.html')
-
-
+@login_required
 def Nuevo_Post(request):
 
     data = {
@@ -49,7 +52,7 @@ def Nuevo_Post(request):
     }
 
     if request.method == 'POST':
-        formulario = PostFrom(request.POST)
+        formulario = PostFrom(request.POST, files=request.FILES)
         if formulario.is_valid():
             formulario.save()
             data['mensaje'] = "Guardado Correctamente"
@@ -64,11 +67,11 @@ def modificar_post(request, id):
     }
 
     if request.method == 'POST':
-        formulario = PostFrom(data=request.POST, instance=Posts)
+        formulario = PostFrom(data=request.POST, instance=Posts,  files=request.FILES)
         if formulario.is_valid():
             formulario.save()
             data['mensaje'] = "Modificacion Correctamente"
-            data['form'] = formulario
+            data['form'] = PostFrom(instance=Post.objects.get(id=id))
 
 
 

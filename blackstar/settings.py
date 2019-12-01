@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
 
 
 # Application definition
@@ -130,7 +132,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 #Url para acceder las peliculas
 
-MEDIA_URL = "/img/"
-MEDIA_ROOT = os.path.join(BASE_DIR,'img')
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 #elruta en donde queda almacinadas las imagenes
 
