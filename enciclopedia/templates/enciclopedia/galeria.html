@@ -17,6 +17,16 @@
 </head>
 
 <body>
+
+    {% load static %}
+    {% block javascript %}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="{% static '../static/js/Confirmacion.js'%}"></script>
+
+    {% endblock %}
+
+
+
     <div class="container-fluid">
         <header class="redondo">
             <div class="row clearfix:after redondo">
@@ -45,6 +55,7 @@
                             <th style="color:rgb(245, 51, 187)";>criatura</th>
                             <th style="color:rgb(245, 51, 187)";>Descripcion</th>
                             <th style="color:rgb(245, 51, 187)";>fecha</th>
+                            <th style="color:rgb(245, 51, 187)";>Opciones</th>
 
                         </tr>
                         {% for p in Posts%}
@@ -53,6 +64,10 @@
                             <th style="color:rgb(255, 255, 255)";>{{ p.criarue }}</th>
                             <th style="color:rgb(255, 255, 255)";>{{ p.Descripcion }}</th>
                             <th style="color:rgb(255, 255, 255)";>{{ p.created_date }}</th>
+                            <th>
+                                <a href="{% url 'modificar_post' p.id %}"> Modificar</a>                           
+                                <a href="#" onclick="Confirmaralerta({{p.id}})"> Eliminar</a>
+                            </th>
                         </tr>
                         {% endfor %}
 

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.utils import timezone
 from .models import Post
 from .Froms import PostFrom
@@ -56,4 +56,28 @@ def Nuevo_Post(request):
     
 
     return render(request, 'enciclopedia/Nuevo_Post.html',data)
+
+def modificar_post(request, id):
+    Posts = Post.objects.get(id=id)
+    data = {
+        'form':PostFrom(instance=Posts)  
+    }
+
+    if request.method == 'POST':
+        formulario = PostFrom(data=request.POST, instance=Posts)
+        if formulario.is_valid():
+            formulario.save()
+            data['mensaje'] = "Modificacion Correctamente"
+            data['form'] = formulario
+
+
+
+
+    return render(request,'enciclopedia/modificar_post.html',data)
+
+def eliminar_post(request, id):
+    Posts = Post.objects.get(id=id)
+    Posts.delete()
+
+    return redirect(to="galeria")
 
