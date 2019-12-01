@@ -34,11 +34,13 @@
                     <a class="letraGamer" href="{% url 'logout' %}"> Cerrar Sesion</a>
                 </li>
             </div>
+            {% else %}
+            <a class="letraGamer" href="{% url 'login' %}"> Iniciar Secion</a>
             {% endif %}
             <nav class="row">
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'index' %}">Inicio</a>
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'criaturas' %} ">Criaturas</a>
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'sesion' %}">login</a>
+                    <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'index' %}">Inicio</a>
+                    <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'criaturas' %} ">Criaturas</a>
+                    <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'galeria' %}">Galeria</a>
             </nav>
         </header>
         <a class="col-xs-12 col-sm-12 CajaPaquete cajaBotonNab letraGamer " href="{% url 'galeria' %}">Volver Galeria</a>

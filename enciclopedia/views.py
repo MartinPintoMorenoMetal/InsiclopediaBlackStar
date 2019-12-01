@@ -1,8 +1,9 @@
 from django.shortcuts import render,redirect
 from django.utils import timezone
 from .models import Post
-from .Froms import PostFrom
-from django.contrib.auth.decorators import login_required
+from .Froms import PostFrom, CustomUserForm
+from django.contrib.auth.decorators import login_required, permission_required
+from django.contrib.auth import login, authenticate
 
 
 # Create your views here.
@@ -60,6 +61,7 @@ def Nuevo_Post(request):
 
     return render(request, 'enciclopedia/Nuevo_Post.html',data)
 
+@login_required
 def modificar_post(request, id):
     Posts = Post.objects.get(id=id)
     data = {
@@ -78,9 +80,26 @@ def modificar_post(request, id):
 
     return render(request,'enciclopedia/modificar_post.html',data)
 
+@permission_required('enciclopedia.delete_post')
 def eliminar_post(request, id):
     Posts = Post.objects.get(id=id)
     Posts.delete()
 
     return redirect(to="galeria")
 
+def registro_usuario(request):
+    data = {
+        'form':CustomUserForm()
+    }
+
+    if request.method == 'POST':
+        formulario = CustomUserForm(request.POST)
+        if formulario.is_valid():
+            formulario.save()
+            #autenticar el usuario 
+            username = formulario.cleaned_data['username']
+            password = formulario.cleaned_data['password1']
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            return redirect(to='index')
+    return render(request,'registration/registrar.html',data)

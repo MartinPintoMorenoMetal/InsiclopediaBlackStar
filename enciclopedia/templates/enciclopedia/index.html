@@ -39,14 +39,17 @@
                     <a class="letraGamer" href="{% url 'logout' %}"> Cerrar Sesion</a>
                 </li>
             </div>
+            {% else %}
+            <a class="letraGamer" href="{% url 'login' %}"> Iniciar Secion   </a>
+            <a class="letraGamer" href="{% url 'registro_usuario' %}" >  Registrate  </a>
             {% endif %}
 
 
             <nav class="row">
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="galeria ">Galería</a>
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="criaturas ">Criaturas</a>
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="formulario">Registrarse</a>
-            </nav>
+                    <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'index' %}">Inicio</a>
+                    <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'criaturas' %} ">Criaturas</a>
+                    <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'galeria' %}">Galeria</a>
+                </nav>
 
         </header>
         <div class="row clearfix:after main redondo ">
