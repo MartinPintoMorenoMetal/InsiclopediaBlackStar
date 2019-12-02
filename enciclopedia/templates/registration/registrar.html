@@ -1,0 +1,68 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/flexboxgrid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/stylePerfil.css' %}">
+    <link rel="stylesheet" href="{% static 'css/estiloFormulario.css' %}">
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="{% static 'js/validarForm.js' %}"></script>
+
+    <title>Inicio de sesión</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <header class="redondo">
+            <div class="row clearfix:after redondo">
+                <div class="logo col-md-12">
+                    <a class="Centrar" href="index">Black Star</a>
+                </div>
+            </div>
+            <nav class="row">
+                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'index' %}">Inicio</a>
+                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer "
+                    href="{% url 'criaturas' %} ">Criaturas</a>
+            </nav>
+        </header>
+    </div>
+    <h1 class="titulo letraGamer Subtitulos">Registro</h1>
+    <div class="container-fluid">
+        <div style="color:rgb(245, 51, 187)" class="main redondo galeria">
+            <form action="" method="post">
+
+                {% csrf_token %}
+                <table>
+                    {{ form.as_table }}
+                </table>
+
+                <input class="letraGamer" style="color:rgb(245, 51, 187)" type="reset" value="limpiar">
+                <input class="letraGamer" style="color:rgb(245, 51, 187)" type="submit" value="registrar">
+
+            </form>
+        </div>
+    </div>
+    <footer class="redondo ">
+        <div class="social col-xs-12 col-sm-3">
+            <a href="#"><i class="far fa-arrow-alt-circle-up"></i></a>
+            <a href="https://www.deviantart.com/thorkam"><i class="fab fa-blogger "></i></a>
+            <a href="https://www.facebook.com/Nitram-1028866417279715/" target="_black"><i
+                    class="fab fa-facebook "></i></a>
+        </div>
+
+    </footer>
+
+</html>

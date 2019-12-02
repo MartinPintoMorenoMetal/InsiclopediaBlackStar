@@ -18,6 +18,17 @@
 
 <body>
     <div class="container-fluid">
+            {% if user.is_authenticated %}
+            <div class="row clearfix:after main redondo ">
+                <li>
+                    <a class="letraGamer" href="#"> {{ user.username }}</a>
+
+                </li>
+                <li>
+                    <a class="letraGamer" href="{% url 'logout' %}"> Cerrar Sesion</a>
+                </li>
+            </div>
+            {% endif %}
         <header class="row">
             <div class="col-xs-12">
                 <h1 class="NombreCriatura">Green Destructor</h1>

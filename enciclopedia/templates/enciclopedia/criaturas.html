@@ -21,20 +21,45 @@
         <header class="redondo">
             <div class="row clearfix:after redondo">
                 <div class="logo col-md-12">
-                    <a class="centrar padding" href="index">Black Star</a>
+                    <a class="Centrar" href="index">Black Star</a>
                 </div>
             </div>
+
+            {% if user.is_authenticated %}
+
+            <a style="color:rgb(245, 51, 187)" class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer"> Usuario:
+                {{ user.username}} </a>
+
+
+            <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'logout' %}"> Cerrar
+                Sesion</a>
+
+
+            {% else %}
+
+            <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'login' %}"> Iniciar Secion
+            </a>
+
+
+
+            <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'registro_usuario' %}">
+                Registrate </a>
+
+
+            {% endif %}
             <nav class="row">
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="index">Inicio</a>
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="galeria">Galeria</a>
-                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="formulario">Registrase</a>
+                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer " href="{% url 'index' %}">Inicio</a>
+                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer "
+                    href="{% url 'criaturas' %} ">Criaturas</a>
+                <a class="col-xs-12 col-sm-3 CajaPaquete cajaBotonNab letraGamer "
+                    href="{% url 'galeria' %}">Galeria</a>
             </nav>
         </header>
-
+        
         <div class="contenedor redondo">
 
             <div class="container">
-                <ul class="list-image">
+                <ul class="list-image">            
                     <li>
                         <div class="container__image"><img src="static/img/Garrashy_modelo.png" alt="" class="image__">
                             <div class="information__image">
@@ -61,44 +86,6 @@
                         </div>
                     </li>
                     <li>
-                        <div class="container__image"><img src="static/img/nukelaber.jpg" alt="NUKELABER"
-                                class="image__">
-                            <div class="information__image">
-                                <p class="name__image">NUKELABER</p>
-                            </div>
-                            <div class="centrar padding">
-                                <a href="perfilA">
-                                    <p class="colorRosa"> Ver mas</p>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="container__image"><img src="static/img/queen.png" alt="QUEEN" class="image__">
-                            <div class="information__image">
-                                <p class="name__image">QUEEN</p>
-                            </div>
-                            <div class="centrar padding">
-                                <a href="perfilA">
-                                    <p class="colorRosa"> Ver mas</p>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="container__image"><img src="static/img/lucius.png" alt="LUCIUS" class="image__">
-                            <div class="information__image">
-                                <p class="name__image">LUCIUS</p>
-                            </div>
-                            <div class="centrar padding">
-                                <a href="perfilA">
-                                    <p class="colorRosa"> Ver mas</p>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
                         <div class="container__image"><img src="static/img/red_hot_.png" alt="RED HOT" class="image__">
                             <div class="information__image">
                                 <p class="name__image">RED HOT</p>
@@ -110,20 +97,6 @@
                             </div>
                         </div>
                     </li>
-
-                    <li>
-                        <div class="container__image"><img src="static/img/Garrashy.png" alt="GARRASHY" class="image__">
-                            <div class="information__image">
-                                <p class="name__image">GARRASHY</p>
-                            </div>
-                            <div class="centrar padding">
-                                <a href="perfilD">
-                                    <p class="colorRosa"> Ver mas</p>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-
                 </ul>
             </div>
         </div>

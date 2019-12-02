@@ -1,4 +1,5 @@
-{% load staticfiles %}<!DOCTYPE html>
+{% load staticfiles %}
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -19,6 +20,17 @@
 
 
     <div class="container-fluid">
+            {% if user.is_authenticated %}
+            <div class="row clearfix:after main redondo ">
+                <li>
+                    <a class="letraGamer" href="#"> {{ user.username }}</a>
+
+                </li>
+                <li>
+                    <a class="letraGamer" href="{% url 'logout' %}"> Cerrar Sesion</a>
+                </li>
+            </div>
+            {% endif %}
         <header class="row">
             <div class="col-xs-12">
                 <h1 class="NombreCriatura">Garrashy</h1>
@@ -36,15 +48,33 @@
             <div class="col-xs-12 col-sm-7">
                 <div class="CajaPaquete cajaContenidoHistoria ColorearContenido">
                     <h1 class="Subtitulos">Historia</h1> <br>
-                    <p class="cuerpo">En el medio oriente se contaba una leyenda de una criatura entre humano y escarabajo, se cuenta la leyenda que en los pueblos aledaños deben dejar ofrendas a las afueras de un gran agujero, grandes cantidades de metales preciosos que
-                        minan por todo el año, para ofrecerlos como atributo y así, evitar catástrofes futuros como fuertes terremotos o caídas de la tierra. El significado de Garrashy es dudoso aun, pero puede significar demonio de tierra, se tiene calculado
-                        de que esta criatura pueda tener más de 1000 años de antigüedad, o también pudo haber estado en la tierra muchísimo más antes estando bajo tierra por todo el mundo, dando vueltas por ella, si hay un terremoto de gran magnitud,
-                        no dudes de que es el bajo tierra cavando un nuevo túnel para sus preciados minerales, se cree que devora metales tan duros como el para seguir mejorando su ya de por si su fuerte caparazón y cuerpo, llegando ser tan duro como
-                        el mismísimo diamante o quizás siendo más resistente, tanto es así que puede resistir el peso de 90 toneladas de corteza terrestre y se cree que da vuelta por el núcleo de la tierra. Sus brazos son tan fuertes como para separar
-                        grandes cantidades de corteza terrestre y cavar más rápido que un taladro moderno, sus antenas están hechas para detectar el más mínimo movimiento sobre tierra. Su personalidad como lo describen algunas leyendas, es de gran tranquilidad
-                        mientras este merodeando por la superficie incluso acepta a algunos que lo toquen, pero se altera con facilidad cuando siente fuertes ruidos, cavando rápidamente un gran agujero o peor aún atacar a quienes lo provoquen, su inteligencia
-                        no es su mayor virtud pero si es provocado, te perseguirá bajo tierra hasta el lugar donde yaces y desatara toda su furia, quizás no sea muy inteligente, pero sabe en donde más nos duele y las numerosas catástrofes terrenales le
-                        les puede atribuir a este insecto de 2 metros, toda la información sobre esta criatura ha sido encubierta con gran éxito, pero no sabemos hasta qué punto esta criatura nos aguante por lo que solo nos queda a que no nos vea con
+                    <p class="cuerpo">En el medio oriente se contaba una leyenda de una criatura entre humano y
+                        escarabajo, se cuenta la leyenda que en los pueblos aledaños deben dejar ofrendas a las afueras
+                        de un gran agujero, grandes cantidades de metales preciosos que
+                        minan por todo el año, para ofrecerlos como atributo y así, evitar catástrofes futuros como
+                        fuertes terremotos o caídas de la tierra. El significado de Garrashy es dudoso aun, pero puede
+                        significar demonio de tierra, se tiene calculado
+                        de que esta criatura pueda tener más de 1000 años de antigüedad, o también pudo haber estado en
+                        la tierra muchísimo más antes estando bajo tierra por todo el mundo, dando vueltas por ella, si
+                        hay un terremoto de gran magnitud,
+                        no dudes de que es el bajo tierra cavando un nuevo túnel para sus preciados minerales, se cree
+                        que devora metales tan duros como el para seguir mejorando su ya de por si su fuerte caparazón y
+                        cuerpo, llegando ser tan duro como
+                        el mismísimo diamante o quizás siendo más resistente, tanto es así que puede resistir el peso de
+                        90 toneladas de corteza terrestre y se cree que da vuelta por el núcleo de la tierra. Sus brazos
+                        son tan fuertes como para separar
+                        grandes cantidades de corteza terrestre y cavar más rápido que un taladro moderno, sus antenas
+                        están hechas para detectar el más mínimo movimiento sobre tierra. Su personalidad como lo
+                        describen algunas leyendas, es de gran tranquilidad
+                        mientras este merodeando por la superficie incluso acepta a algunos que lo toquen, pero se
+                        altera con facilidad cuando siente fuertes ruidos, cavando rápidamente un gran agujero o peor
+                        aún atacar a quienes lo provoquen, su inteligencia
+                        no es su mayor virtud pero si es provocado, te perseguirá bajo tierra hasta el lugar donde yaces
+                        y desatara toda su furia, quizás no sea muy inteligente, pero sabe en donde más nos duele y las
+                        numerosas catástrofes terrenales le
+                        les puede atribuir a este insecto de 2 metros, toda la información sobre esta criatura ha sido
+                        encubierta con gran éxito, pero no sabemos hasta qué punto esta criatura nos aguante por lo que
+                        solo nos queda a que no nos vea con
                         malos ojos al ver que extraemos gran cantidad de sus minerales.
                     </p>
                 </div>
@@ -99,13 +129,17 @@
             </div>
             <div class="col-xs-12 col-sm-4">
                 <h1 class="Subtitulos">Localizacion</h1> <br>
-                <p class="cuerpo"> Se tiene conocimiento que garrashy está en constante movimiento, pero los lugares donde más se le ha visto merodeando es en las minas de todo tipo, pero se a detectado que frecuenta una mina de salitre ubicada en chile en medio del desierto.
+                <p class="cuerpo"> Se tiene conocimiento que garrashy está en constante movimiento, pero los lugares
+                    donde más se le ha visto merodeando es en las minas de todo tipo, pero se a detectado que frecuenta
+                    una mina de salitre ubicada en chile en medio del desierto.
                 </p>
             </div>
 
             <div class="col-xs-12 col-sm-4">
-                <a title="salitrera" href="static/img/270px-Oficina_salitrera_Santiago_Humberstone,_Región_de_Tarapacá,_Chile.jpg">
-                    <img class="CajaFull" src="static/img/270px-Oficina_salitrera_Santiago_Humberstone,_Región_de_Tarapacá,_Chile.jpg"></a>
+                <a title="salitrera"
+                    href="static/img/270px-Oficina_salitrera_Santiago_Humberstone,_Región_de_Tarapacá,_Chile.jpg">
+                    <img class="CajaFull"
+                        src="static/img/270px-Oficina_salitrera_Santiago_Humberstone,_Región_de_Tarapacá,_Chile.jpg"></a>
 
             </div>
         </div>
@@ -113,7 +147,21 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <div class="CajaPaquete"></div>
+                <div class="CajaPaquete">
+                    <h1>Galeria de Imagenes </h1>
+                    <!--
+                    {% for p in Posts %}
+                    <div>
+                        <li>
+                            <div class="container__image">
+                                <img src="{{ p.imagen.url }}" title="{{ p.created_date }}"></th>
+                            </div>
+                        </li>
+                    </div>
+                    {% endfor %}
+
+                    -->
+                </div>
             </div>
         </div>
         <footer>
