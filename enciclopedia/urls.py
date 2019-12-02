@@ -1,4 +1,6 @@
-from django.urls import path
+from django.contrib import admin
+from django.urls import include, path
+from django.contrib.auth.decorators import login_required
 from . import views
 from .views import index,galeria,listaperfilA,listaperfilB,listaperfilC,Nuevo_Post,modificar_post,eliminar_post,registro_usuario
 
